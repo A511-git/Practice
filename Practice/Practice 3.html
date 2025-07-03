@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 3</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .nav{
+            width: 100vw;
+            background-color: aqua;
+            border: 1px solid black;
+            box-shadow: 5px 8px 5px -4px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20vw;
+            font-size: 18px;
+            top: 0;
+            position:sticky;
+            z-index: 10000;
+        }
+        
+        .section-1{
+            background-color: blueviolet;
+            width: 100vw;
+            height: clamp(700px,75vh,90vh) ;
+            display: flex;
+            gap: 20vw;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .section-1 div{
+            background-color: darkgreen;
+            width: 35vw;
+            height: clamp(600px,65vh,80vh) ;
+            border-radius: 25px;
+            box-shadow: 5px 7px 5px -4px;
+        }
+
+        .section-2{
+            width: 80vw;
+            height: 200px;
+            border-radius: 150px;
+            background-color: hotpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .section-2 p{
+            font-size: 50px;
+            text-transform: capitalize;
+        }
+
+        .logo{
+            background-color: chocolate;
+            width: 10vw;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            z-index: 10000;
+        }
+
+        .footer{
+            width: 100vw;
+            background-color: aqua;
+            border: 1px solid black;
+            box-shadow: 5px 8px 5px -4px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20vw;
+            font-size: 18px;
+            top: 0;
+            position:sticky;
+            z-index: 10000;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <main>
+        <nav class="nav">
+            <a href="Practice 3.html">Home</a>
+            <a href="practice 1.html">Prac 1</a>
+            <a href="Practice 2.html">Prac 2</a>
+            <a href="#">About</a>
+        </nav>
+
+        <section class="section-1">
+            <div class="child-1"></div>
+            <div class="child-2"></div>
+        </section>
+
+        <section class="section-2">
+            <p>Just Practicing CSS for a skill boost. </p>
+        </section>
+
+        <div class="logo"></div>
+
+        <footer class="footer">
+            <span>This content was created by A-11</span>
+            <a href="mailto:abc@gmail.com">Contact</a>
+        </footer>
+
+    </main>
+
+</body>
+</html>

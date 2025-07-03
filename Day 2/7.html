@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel booking</title>
+</head>
+<body>
+    <header><h1>Book Vacation</h1></header>
+    <main>
+        <fieldset>
+            <legend>Travel Booking Form</legend>
+            <form action="doc.php">
+                <div>
+                    <span><b>Personal Details</b></span>
+                <div>
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                <label for="phone number">Phone Num :</label>
+                <input type="text" name="name" placeholder="Enter your name" required>
+                </div>
+                <div>
+                <label for="dob">DOB</label>
+                <input type="date" name="date" id="dob" required>
+                </div>
+            </div>
+                <br>
+                <div>
+                    <span><b>Travel Details</b></span>                
+                <div>
+                    <label for="country">Select Country :</label>
+                    <select name="country" id="to">
+                    <option value="UAE">UAE</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    </select>
+                </div>
+                <p>Travel Type :</p>
+                <label for="oneway">Oneway</label>
+                <input type="radio" name="type" id="oneway" value="oneway">
+                <label for="roundtrip">Roundtrip</label>
+                <input type="radio" name="type" id="roundtrip" value="roundtrip">
+                </div>
+                <br>
+                <div>
+                    <span><b>Travel Dates</b></span>
+                    <div>
+                        <label for="departure">Departure Date :</label>
+                        <input type="date" name="departure" id="departure" required>
+                        <br>
+                        <label for="round">Return Date :</label>
+                        <input type="date" name="round" id="round" required>
+                    </div>
+                </div>
+
+            </form>
+        </fieldset>
+    </main>
+    <footer></footer>
+</body>
+</html>

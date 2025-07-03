@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            background-color: aqua;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70vw;
+            margin: 30px auto 0px auto;
+            border: 1px solid black;
+            border-radius: 1.4rem;
+            box-shadow: 5px 7px 5px -4px rgba(0, 0, 0, 0.5);
+            background-color: white;
+        }
+
+        ul,
+        a {
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: black;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 3rem;
+            border-radius: 50%;
+        }
+
+        .text h1 {
+            font-size: 1.1rem;
+        }
+
+        .text p {
+            font-size: 0.6rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        header a {
+            margin-right: 1rem;
+        }
+
+        .glass-effect {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+
+        @media (max-width:820px) {
+            header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: min(90%, 500px);
+                margin: 30 auto;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .logo {
+                position: relative;
+                bottom: 1.5rem;
+            }
+
+            .logo img {
+                width: 4rem;
+            }
+
+            .text h1 {
+                font-size: 1.4rem;
+            }
+
+            .text p {
+                font-size: 0.8rem;
+            }
+
+            .nav-links {
+                position: relative;
+                bottom: 1.1rem;
+            }
+
+            a {
+                position: relative;
+                bottom: 0.8rem;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="glass-effect">
+        <div class="logo">
+            <img src="Kana Arima. passport.jpeg" alt="Kana Arima">
+            <div class="text">
+                <h1>Kana Arima</h1>
+                <p>Do u like her ?</p>
+            </div>
+        </div>
+
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Courses</li>
+        </ul>
+        <a href="#">Contact</a>
+    </header>
+</body>
+
+</html>

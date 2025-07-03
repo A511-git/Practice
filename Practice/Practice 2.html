@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuliColor Nav</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --nav-background: #3498db;
+            --nav-text-color: #333;
+            --background: #827382;
+            
+        }
+
+        .nav {
+            width: clamp(250px, 40vw, 600px);
+            height: 30px;
+            gap: clamp(10px, 6vw, 100px);
+            background-color: var(--nav-background);
+            margin: 0 auto;
+            border-radius: 25px;
+            border: 1px solid black;
+            margin-top: 30px;
+            box-shadow: 5px 7px 5px -4px;
+            display: flex;
+            align-items: center;            
+            justify-content: center;
+        }
+
+        .nav a{
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+            margin: 0 auto;
+            text-decoration: solid;
+            font-weight: bold;
+            color: var(--nav-text-color);
+
+        }
+
+        body{
+            background-color: var(--background);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="practice 1.html">Web 1</a>
+    </nav>
+
+</body>
+
+</html>

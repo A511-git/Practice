@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            background-color: cadetblue;
+            height: 1650px;
+            width: 1100px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .box1, .box2, .box3, .box4, .box5{
+            height: 90px;
+            border: 1px solid black;
+            box-shadow: 5px 7px 5px -4px;
+            margin: 30px auto;
+            padding: 30px;
+            width: 90%;
+        }
+
+        .box1 {
+            background-color: aqua;
+            z-index: 6;
+            position: sticky;
+            top: 0px;
+        }
+
+        .box2 {
+            background-color: antiquewhite;
+            position: relative;
+            top: 45px;
+            left: 20px;
+            z-index: 7;
+        }
+
+        .box3 {
+            background-color: aquamarine;
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            z-index: 2;
+        }
+
+        .box4 {
+            background-color: beige;
+            z-index: 6;
+        }
+
+        .box5{
+            z-index: 4;
+            background-color: darkcyan;
+            width: 300px;
+            height: 300px;
+            position: fixed;
+            bottom: 250px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+        <div class="box3">Box 3</div>
+        <div class="box4">Box 4</div>
+        <div class="box5">Box 5</div>
+    </div>
+</body>
+
+</html>

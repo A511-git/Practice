@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            display: inline;
+            font-style: italic;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        a:active {
+            color: red;
+        }
+        a:link {
+            color: yellow;
+        }
+        a:visited {
+            color: green;
+        }
+        article{
+            background-color: #b78b8b;
+        }
+        section{
+            background-color: #796161;
+        }
+        .section2 {
+            background-color: #692828;
+        }
+        #a{
+            color: white;
+            background-color: #300808;
+        }
+         #b{
+            color: white;
+            background-color: #730000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span><h1><a href="1.html">Home</a></h1></span>
+            <span><h1>CSS Selectors</h1></span>
+            <span><h1><a href="media player.html">Second Site</a></h1></span>
+        </nav>
+    </header>
+    <main>
+        <article class="css-selectors">
+            <p><b>CSS Selectors</b></p>
+            <section>
+                <p>CSS selectors are patterns used to select the elements you want to style.</p>
+                <ul class="selectors">
+                    <li><code>*</code> - Universal selector</li>
+                    <li><code>.class</code> - Class selector</li>
+                    <li><code>#id</code> - ID selector</li>
+                    <li><code>element</code> - Type selector</li>
+                    <li><code>[attribute]</code> - Attribute selector</li>
+                </ul>
+            </section>
+        </article>
+        <br>
+        <section class="section2">
+            <div class="quote begin" id="a">
+                <P>Wake up to reality</P>
+                <p>Nothing ever goes as planned in this accursed world</p>
+            </div>
+            <div class="quote" id="b">
+                <p>The longer you live</p>
+                <p>The more you will realize that the only thing that truly exist in this reality</p>
+                <p class="end">are mearly PAIN, SUFFERING and FUTILITY</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

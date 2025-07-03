@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lists and Tables</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      padding: 2rem;
+      color: #333;
+    }
+
+    h2, h3 {
+      color: #004d80;
+    }
+
+    p {
+      font-style: italic;
+      color: #666;
+    }
+
+    ul, ol, dl {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+    }
+
+    li {
+      margin: 0.3rem 0;
+    }
+
+    dt {
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+
+    dd {
+      margin-left: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    hr {
+      margin: 2rem 0;
+      border: 0;
+      border-top: 2px solid #ccc;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    td {
+      padding: 0.75rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>Lists</h2>
+
+  <h3>Unordered List</h3>
+  <p>ul&gt;li*3</p>
+  <ul>
+    <li>Bokka Chan</li>
+    <li>Bokka Chan</li>
+    <li>Bokka Chan</li>
+  </ul>
+
+  <h3>Ordered List</h3>
+  <p>ol&gt;li*3</p>
+  <ol>
+    <li>Bokka Chan</li>
+    <li>Bokka Chan</li>
+    <li>Bokka Chan</li>
+  </ol>
+
+  <h3>Definition List</h3>
+  <p>dl&gt;(dt+dd)*3</p>
+  <dl>
+    <dt>Bokka Chan</dt>
+    <dd>Definition of Bokka Chan</dd>
+    <dt>Bokka Chan</dt>
+    <dd>Definition of Bokka Chan</dd>
+    <dt>Bokka Chan</dt>
+    <dd>Definition of Bokka Chan</dd>
+  </dl>
+
+  <hr />
+
+  <h2>Table</h2>
+  <p>table&gt;(tr&gt;td*3)*3</p>
+  <table>
+    <tr>
+      <td>Bokka Chan</td>
+      <td>Bokka Chan</td>
+      <td>Bokka Chan</td>
+    </tr>
+    <tr>
+      <td>Bokka Chan</td>
+      <td>Bokka Chan</td>
+      <td>Bokka Chan</td>
+    </tr>
+    <tr>
+      <td>Bokka Chan</td>
+      <td colspan="2">Bokka Chan</td>
+    </tr>
+  </table>
+</body>
+</html>

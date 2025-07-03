@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css4?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70vw;
+            margin: 30px auto 0px auto;
+        }
+
+        ul,
+        a {
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: black;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 3rem;
+            border-radius: 50%;
+        }
+
+        .text h1 {
+            font-size: 1.1rem;
+        }
+
+        .text p {
+            font-size: 0.6rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 4rem;
+        }
+
+        header a {
+            margin-right: 1rem;
+        }
+
+        .glass-effect {
+            background-color: rgba(455, 455, 455, 0.1);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+
+        @media (max-width:840px) {
+            header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: min(90%, 500px);
+                margin: 30 auto;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .logo img {
+                width: 4rem;
+            }
+
+            .text h1 {
+                font-size: 1.4rem;
+            }
+
+            .text p {
+                font-size: 0.8rem;
+            }
+        }
+
+        main {
+            width: max(60vw, 400px);
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        .intro {
+            text-align: center;
+            margin: 3rem auto;
+        }
+
+        .intro p:nth-child(1) {
+            font-size: clamp(1.2rem, 2vw + 1rem, 2rem);
+            margin: clamp(0.9rem, 1.5vw + 0.5rem, 1.5rem) auto;
+        }
+
+        .intro :nth-child(2),
+        .intro :nth-child(3) {
+            font-size: clamp(0.3rem, 1vw + 0.5rem, 1.2rem);
+            margin: clamp(0.2rem, 0.7vw + 0.2rem, 0.6rem) auto;
+        }
+
+        .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 950px;      /* Center max size */
+    margin: 0 auto;          /* Center grid */
+    padding: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 0 ;
+    background-color: rgb(212, 212, 212);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;              /* Let grid decide width */
+}
+        .card p{
+            margin-top: 12px;
+            font-weight: 600;
+        }
+        .card-button{
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+
+        .card-button button{
+            width: 120px;
+            font-size: 12px;
+            border-radius: 5px;
+            margin-bottom: 16px;
+        }
+        .button1{
+            background-color: #1e98c0;
+        }
+        .button2{
+            background-color: #3fb43f;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="glass-effect">
+        <div class="logo">
+            <img src="Kana Arima. passport.jpeg" alt="Kana Arima">
+            <div class="text">
+                <h1>Kana Arima</h1>
+                <p>Do u like her ?</p>
+            </div>
+        </div>
+
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Carrer</li>
+        </ul>
+        <a href="#">Fan Club</a>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p>Welcome to <b>Kana Arima’s</b> World</p>
+            <p>Discover the life and career of Kana Arima — a brilliant actress from <b>Oshi no Ko</b>. Step into her
+                spotlight.</p>
+            <button>Watch Her Performances</button>
+        </section>
+
+
+        <p>Learn More about Kana</p>
+        <div class="card-grid">
+            <section class="card">
+                <p>Debut</p>
+                <div class="card-button">
+                    <button class="button1">First Role</button>
+                    <button class="button2">Early Fame</button>
+                </div>
+            </section>
+
+            <section class="card">
+                <p>Personality</p>
+                <div class="card-button">
+                    <button class="button1">Proud Nature</button>
+                    <button class="button2">Hidden Softness</button>
+                </div>
+            </section>
+
+            <section class="card">
+                <p>Skills</p>
+                <div class="card-button">
+                    <button class="button1">Acting Power</button>
+                    <button class="button2">Vocal Talent</button>
+                </div>
+            </section>
+
+            <section class="card">
+                <p>Career Highlights</p>
+                <div class="card-button">
+                    <button class="button1">Lead Roles</button>
+                    <button class="button2">Top Performances</button>
+                </div>
+            </section>
+
+            <section class="card">
+                <p>Struggles</p>
+                <div class="card-button">
+                    <button class="button1">Self-Doubt</button>
+                    <button class="button2">Harsh Industry</button>
+                </div>
+            </section>
+
+            <section class="card">
+                <p>Growth</p>
+                <div class="card-button">
+                    <button class="button1">Leveling Up</button>
+                    <button class="button2">Finding Purpose</button>
+                </div>
+            </section>
+
+            <section class="card">
+                <p>Relationships</p>
+                <div class="card-button">
+                    <button class="button1">Aqua Bond</button>
+                    <button class="button2">Rivalries</button>
+                </div>
+            </section>
+
+            <section class="card">
+                <p>Trivia</p>
+                <div class="card-button">
+                    <button class="button1">Likes & Dislikes</button>
+                    <button class="button2">Secret Habit</button>
+                </div>
+            </section>
+
+            <section class="card">
+                <p>Fan Base</p>
+                <div class="card-button">
+                    <button class="button1">Loyal Fans</button>
+                    <button class="button2">Global Love</button>
+                </div>
+            </section>
+
+            <section class="card">
+                <p>Quotes</p>
+                <div class="card-button">
+                    <button class="button1">Iconic Line</button>
+                    <button class="button2">Deep Words</button>
+                </div>
+            </section>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      padding: 20px;
+    }
+
+    h2,p {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    fieldset {
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+    }
+
+    div {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: inline-block;
+      width: 120px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="date"],
+    input[type="time"],
+    select {
+      width: 60%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-left: 10px;
+      margin-right: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    span {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Forms in HTML</h2>
+  <p>Forms are essential for collecting user input in web applications. They allow users to submit data, which can be processed by the server.</p>
+
+  <form action="doc.php" autocomplete="on">
+    <fieldset>
+      <legend>Form</legend>
+
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+
+      <div>
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" placeholder="Number" required>
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+      </div>
+
+      <div>
+        <label for="date">DOB:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <div>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time">
+      </div>
+
+      <div>
+        <span>Select Your Caste:</span>
+        <label for="general">General</label>
+        <input type="radio" id="general" name="caste" value="General" required>
+
+        <label for="obc">OBC</label>
+        <input type="radio" id="obc" name="caste" value="OBC" required>
+
+        <label for="sc-st">SC/ST</label>
+        <input type="radio" id="sc-st" name="caste" value="SC-ST" required>
+      </div>
+
+      <div>
+        <span>Education:</span>
+        <label for="x">X</label>
+        <input type="checkbox" id="x" name="x">
+
+        <label for="xii">XII</label>
+        <input type="checkbox" id="xii" name="xii">
+
+        <label for="graduate">Graduate</label>
+        <input type="checkbox" id="graduate" name="graduate">
+
+        <label for="post-grad">Post-Grad</label>
+        <input type="checkbox" id="post-grad" name="post-grad">
+      </div>
+
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+    </fieldset>
+  </form>
+
+</body>
+</html>

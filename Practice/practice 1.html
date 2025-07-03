@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        html {
+            background-color: rgb(46, 46, 94);
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.2);
+            /* white with 20% opacity */
+            backdrop-filter: blur(10px);
+            /* apply blur behind */
+            -webkit-backdrop-filter: blur(10px);
+            /* Safari support */
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .nav {
+            width: clamp(400px, 40vw, 600px);
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 25px;
+            background-color: azure;
+            margin: 0 auto;
+            margin-top: 30px;
+            top: 0px;
+            position: sticky;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(10px, 6vw, 100px);
+            z-index: 1000;
+            box-shadow: 5px 7px 5px -4px;
+
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .footer-content {
+            text-align: center;
+            background-color: aliceblue;
+            box-shadow: 5px 7px 5px -4px;
+            border: 1px solid black;
+            border-radius: 15px;
+            box-shadow: 5px 7px 5px -4px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 10px;
+            
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        @media screen  { 
+            
+        }
+
+        .parent {
+            box-shadow: 5px 7px 5px -4px;
+            margin-top: 70px;
+            width: clamp(300px, 30vw, 600px);
+            height: auto;
+            position: relative;
+            background-color: rgb(255, 0, 200);
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image img {
+            position: relative;
+            margin: 10px;
+            width: clamp(250px, 95%, 500px);
+            object-fit: cover;
+            display: block;
+            border: 1px solid black;
+            border-radius: 15px;
+            box-shadow: 5px 7px 5px -4px;
+            overflow: hidden;
+        }
+
+        .hashtags {
+            margin: 10px 30px;
+
+        }
+
+        .hashtags button {
+            border-radius: 27px;
+            border: 2px solid black;
+            width: 100px;
+            height: 25px;
+            font-weight: lighter;
+        }
+
+        .text {
+            margin: 10px;
+        }
+
+        .text h1 {
+            font-size: 1.7em;
+        }
+
+        .text p {
+            padding-top: 8px;
+        }
+
+        .read {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .read-button {
+            border: 2px solid black;
+            border-radius: 27px;
+            width: 150px;
+            height: 30px;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a class="nav-about" href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <div class="parent">
+            <div class="image">
+                <img src="Kana Arima.jpeg" alt="">
+            </div>
+            <section class="hashtags glass-effect">
+                <button>Oshi no Ko</button>
+                <button>Kana Arima</button>
+            </section>
+            <article class="text">
+                <h1>Kana Arima</h1>
+                <p>Kana Arima, a former child star in <b>Oshi no Ko</b>, hides vulnerability behind her sharp wit.
+                    Struggling to reclaim her fame, she seeks validation and purpose in the harsh world of showbiz.
+                </p>
+            </article>
+            <section class="read glass-effect">
+                <button class="read-button">Read More</button>
+
+            </section>
+
+        </div>
+
+        <br>
+
+        <div class="parent">
+            <div class="image">
+                <img src="Kana Arima.jpeg" alt="">
+            </div>
+            <section class="hashtags">
+                <button>Oshi no Ko</button>
+                <button>Kana Arima</button>
+            </section>
+            <article class="text">
+                <h1>Kana Arima</h1>
+                <p>Kana Arima, a former child star in <b>Oshi no Ko</b>, hides vulnerability behind her sharp wit.
+                    Struggling to reclaim her fame, she seeks validation and purpose in the harsh world of showbiz.
+                </p>
+            </article>
+            <section class="read">
+                <button class="read-button">Read More</button>
+
+            </section>
+
+        </div>
+
+        <br>
+
+        <div class="parent">
+            <div class="image">
+                <img src="Kana Arima.jpeg" alt="">
+            </div>
+            <section class="hashtags">
+                <button>Oshi no Ko</button>
+                <button>Kana Arima</button>
+            </section>
+            <article class="text">
+                <h1>Kana Arima</h1>
+                <p>Kana Arima, a former child star in <b>Oshi no Ko</b>, hides vulnerability behind her sharp wit.
+                    Struggling to reclaim her fame, she seeks validation and purpose in the harsh world of showbiz.
+                </p>
+            </article>
+            <section class="read">
+                <button class="read-button">Read More</button>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span>This content was devloped by A-511</span>
+            <a href="mailto:abc@a511.com">Contact</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

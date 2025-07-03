@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 1000px;
+            height: 500px;
+            margin: 0 auto;
+            background-color: black;
+            display: flex;
+            align-items: end;
+            position: relative;
+        }
+
+        .ball {
+            width: 80px;
+            height: 80px;
+            background-color: cornflowerblue;
+            border: 1px solid rgb(47, 120, 254);
+            border-radius: 50%;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;bottom: 0;
+            animation: ball-x-motion 7s linear infinite, ball-y-motion 7s ease-out infinite alternate, ball-rotation 7s ease infinite;
+        }
+
+        @keyframes ball-x-motion {
+            0% {
+                left: 0px;
+            }
+
+            25% {
+                left: 230;
+            }
+
+            50% {
+                left: 460px;
+            }
+
+            75% {
+                left: 690px;
+            }
+
+            87% {
+                left: 800px;
+            }
+
+            93% {
+                left: 855px;
+            }
+
+            100% {
+                left: 920px;
+            }
+        }
+
+        @keyframes ball-y-motion {
+            0% {
+                bottom: 0px;
+            }
+
+            25% {
+                bottom: 400px;
+            }
+
+            50% {
+                bottom: 0px;
+            }
+
+            75% {
+                bottom: 225px;
+            }
+
+            87% {
+                bottom: 0px;
+            }
+
+            93% {
+                bottom: 112px;
+            }
+
+            100% {
+                bottom: 0px;
+            }
+        }
+
+        @keyframes ball-rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            33% {
+                transform: rotate(120deg);
+            }
+
+            66% {
+                transform: rotate(240deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .line1,
+        .line2,
+        .line3 {
+            width: 1px;
+            border: 1px solid burlywood;
+            height: 100%;
+        }
+
+        .line2 {
+            transform: rotate(60deg);
+        }
+
+        .line3 {
+            transform: rotate(120deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="ball">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+</body>
+
+</html>

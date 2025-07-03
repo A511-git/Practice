@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            margin: 0 8px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 1.5rem 0 3rem 0;
+            flex-wrap: wrap;
+            column-gap: 20rem;
+        }
+
+        .logo {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .logo .img {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text p {
+            font-size: 0.6rem;
+            display: block;
+            width: max-content;
+            margin: 0 auto;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5 rem;
+        }
+
+        main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container {
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .intro-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            padding-bottom: 2rem;
+        }
+
+        .intro-container-part1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            font-size: 3rem;
+        }
+
+        .intro-container-part1 img {
+            width: 7rem;
+            border-radius: 7px;
+            border: 1px solid black;
+        }
+
+        .intro-container-part2 {
+            font-size: 1rem;
+        }
+
+        .container-grid {
+            width: 100%;
+            max-width: 815px;
+        }
+
+        .grid-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            padding-bottom: 1.6rem;
+        }
+
+        .grid-heading img {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .grid-heading span div {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            gap: 1rem 1rem;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 0.5rem;
+            background-color: rgba(0, 0, 0, 0.253);
+        }
+
+        .card p:first-child {
+            font-weight: 600;
+        }
+
+        .context{
+            font-size: 0.5rem;
+            font-weight: 200;
+        }
+
+        .card-buttons {
+            display: flex;
+            gap: 0.5rem;
+            width: fit-content;
+        }
+
+        button {
+            padding: 0.2rem 0.5rem;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: grabbing;
+        }
+
+        .intro-container-part3 a button {
+            background-color: rgb(20, 189, 173);
+        }
+
+        .button1 {
+            background-color: rgb(20, 189, 173);
+        }
+
+        .button2 {
+            background-color: rgb(131, 193, 31);
+        }
+
+        .intro-container-part3a button:hover {
+            background-color: rgb(21, 146, 134);
+        }
+
+        .button1:hover {
+            background-color: rgb(21, 146, 134);
+        }
+
+        .button2:hover {
+            background-color: rgb(102, 148, 27);
+        }
+
+        @media (max-width: 833px) {
+            .intro-container-part1 img {
+                width: 80%;
+                border-radius: 15px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img class="img" src="bokko-chan black.jpg" alt="">
+                <div class="logo-text">
+                    <h1>BokkoChan</h1>
+                    <p>An idea inc. company</p>
+                </div>
+            </div>
+            <ul>
+                <li>Products <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></i></li>
+                <li>Pricing <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></li>
+                <li>Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></li>
+                <li>About Us <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#000000"
+                        fill="none">
+                        <path
+                            d="M5 5.82759H7.7M11 5.82759H9.5M7.7 5.82759H9.5M7.7 5.82759V5M9.5 5.82759C9.18351 6.95937 8.52075 8.02923 7.76429 8.96946M5.83571 11C6.44723 10.4377 7.13788 9.74802 7.76429 8.96946M7.76429 8.96946C7.37857 8.51724 6.83857 7.78558 6.68429 7.45455M7.76429 8.96946L8.92143 10.1724"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M13.5 19L14.3333 17M18.5 19L17.6667 17M14.3333 17L16 13L17.6667 17M14.3333 17H17.6667"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path
+                            d="M14 10V8C14 5.17157 14 3.75736 13.1213 2.87868C12.2426 2 10.8284 2 8 2C5.17157 2 3.75736 2 2.87868 2.87868C2 3.75736 2 5.17157 2 8C2 10.8284 2 12.2426 2.87868 13.1213C3.75736 14 5.17157 14 8 14H10"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                        <path
+                            d="M10 16C10 13.1716 10 11.7574 10.8787 10.8787C11.7574 10 13.1716 10 16 10C18.8284 10 20.2426 10 21.1213 10.8787C22 11.7574 22 13.1716 22 16C22 18.8284 22 20.2426 21.1213 21.1213C20.2426 22 18.8284 22 16 22C13.1716 22 11.7574 22 10.8787 21.1213C10 20.2426 10 18.8284 10 16Z"
+                            stroke="currentColor" stroke-width="1.5"></path>
+                        <path
+                            d="M4 16.5C4 17.9045 4 18.6067 4.33706 19.1111C4.48298 19.3295 4.67048 19.517 4.88886 19.6629C5.39331 20 6.09554 20 7.5 20"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path
+                            d="M20 7.5C20 6.09554 20 5.39331 19.6629 4.88886C19.517 4.67048 19.3295 4.48298 19.1111 4.33706C18.6067 4 17.9045 4 16.5 4"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </svg></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <section class="intro-container">
+                <div class="intro-container-part1">
+                    <p>Download <b>BokkoChan</b> for Winows</p>
+                    <img src="bokko-chan-banner.webp" alt="bokko-chan-banner">
+                </div>
+                <div class="intro-container-part2">
+                    <p>Download and try BokkoChan before you try it! This download includes the full windows version of
+                        the BokkoChan Lite.</p>
+                </div>
+                <div class="intro-container-part3">
+                    <a href="bokka-chan.webp" download=""><button>Download MAC or Linux version</button></a>
+                </div>
+            </section>
+
+            <section class="container-grid">
+                <div class="grid-heading">
+                    <img src="bokko-chan red.jpg" alt="dd">
+                    <span>
+                        <div>
+                            <h2>Download BokkoChan</h2>
+                            <p>v20087(released on 00/00/0000)</p>
+                        </div>
+                    </span>
+                </div>
+                <div class="grid">
+                    <div class="card">
+                        <p>English</p>
+                        <div class="card-buttons">
+                            <a href="bokka-chan.webp" download><button class="button1">Download 32-bit</button></a>
+                            <a href="bokka-chan.webp" download><button class="button2">Download 64-bit</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p>Hindi</p>
+                        <div class="card-buttons">
+                            <a href="bokka-chan.webp" download><button class="button1">Download 32-bit</button></a>
+                            <a href="bokka-chan.webp" download><button class="button2">Download 64-bit</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p>Urdu</p>
+                        <div class="card-buttons">
+                            <a href="bokka-chan.webp" download><button class="button1">Download 32-bit</button></a>
+                            <a href="bokka-chan.webp" download><button class="button2">Download 64-bit</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p>Tamil</p>
+                        <div class="card-buttons">
+                            <a href="bokka-chan.webp" download><button class="button1">Download 32-bit</button></a>
+                            <a href="bokka-chan.webp" download><button class="button2">Download 64-bit</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p>Arbic</p>
+                        <div class="card-buttons">
+                            <a href="bokka-chan.webp" download><button class="button1">Download 32-bit</button></a>
+                            <a href="bokka-chan.webp" download><button class="button2">Download 64-bit</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p>Mandrin</p>
+                        <div class="card-buttons">
+                            <a href="bokka-chan.webp" download><button class="button1">Download 32-bit</button></a>
+                            <a href="bokka-chan.webp" download><button class="button2">Download 64-bit</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p>Japanese</p>
+                        <div class="card-buttons">
+                            <a href="bokka-chan.webp" download><button class="button1">Download 32-bit</button> </a>
+                            <a href="bokka-chan.webp" download><button class="button2">Download 64-bit</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p>Russian</p>
+                        <div class="card-buttons">
+                            <a href="bokka-chan.webp" download><button class="button1">Download 32-bit</button></a>
+                            <a href="bokka-chan.webp" download><button class="button2">Download 64-bit</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p>Dutch</p>
+                        <div class="card-buttons">
+                            <a href="bokka-chan.webp" download><button class="button1">Download 32-bit</button></a>
+                            <a href="bokka-chan.webp" download><button class="button2">Download 64-bit</button></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p>Italiano</p>
+                        <div class="card-buttons">
+                            <a href="bokka-chan.webp" download><button class="button1">Download 32-bit</button></a>
+                            <a href="bokka-chan.webp" download><button class="button2">Download 64-bit</button></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
