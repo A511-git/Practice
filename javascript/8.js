@@ -1,0 +1,10 @@
+let a=8;
+let s=81;
+let d=48;
+let f=34;
+let g=9;
+let mean;
+mean=a+s+d+f+g;
+console.log("Sum = " + mean);
+mean=mean/5;
+console.log(mean);
