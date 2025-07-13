@@ -61,10 +61,28 @@ let string = "Dont worry i got your back";
 // console.log(string)
 // string=string.toLocaleLowerCase();
 // console.log(string)
-let i;
-for (i = string.length; i >= 0; i--) {
-    if(string[i]==" ")
-        break;    
-}
-console.log(i);
-console.log(string.slice(i,string.length));
+// let i;
+// for (i = string.length; i >= 0; i--) {
+//     if(string[i]==" ")
+//         break;    
+// }
+// console.log(i);
+// console.log(string.slice(i+1,string.length));
+
+// let arr=string.split(" ");
+// arr.reverse();
+// let str= arr.join(" ")
+// console.log(str)
+
+// function reverse_string(str){
+//     return str.split("").reverse().join('');
+// }
+
+// let revstr="";
+
+// let arr=string.split(" ");
+// for(let i=0;i<arr.length;i++){
+//     revstr=revstr+" "+reverse_string(arr[i]);
+// }
+// console.log(revstr.trim());
+
