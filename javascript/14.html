@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crete promices</title>
+</head>
+
+<body>
+    <script>
+
+        const obj = { User: "A-511", Skill: "HTML/CSS/JS" };
+
+        const promiseOne = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("PromiseOne");
+                resolve()
+
+            }, 2000)
+        })
+        promiseOne.then(() => {
+            console.log("Promise 1");
+            console.log("--------------");
+            console.log("");
+        })
+
+        const promiseTwo = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("PromiseTwo");
+                resolve(obj)
+
+            }, 2000)
+        })
+        promiseTwo.then((obj) => {
+            console.log("Promise 2");
+            console.log(obj);
+            console.log("--------------");
+            console.log("");
+        })
+
+        const promiseFour = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                let success = Math.floor(Math.random() * 2);
+                if (success) {
+                    console.log("PromiseFour");
+                    resolve(obj)
+                }
+                else {
+                    console.log("PromiseFour");
+                    reject("Something Went Wrong!")
+                }
+
+            }, 2000)
+        })
+        promiseFour.then((obj) => {
+            console.log("Promise 4");
+            return obj.User;
+        })
+            .then((User) => {
+                console.log(User);
+                return User.length;
+            })
+            .then((length) => {
+                console.log(length);
+                console.log("--------------");
+                console.log("");
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+
+        const promiseFive = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                let success = Math.floor(Math.random() * 2);
+                if (success) {
+                    console.log("PromiseFive");
+                    resolve(obj)
+                }
+                else {
+                    console.log("PromiseFive");
+                    reject("Something Went Wrong!")
+                }
+            }, 2000)
+        })
+        async function consumePromiseFive() {
+            try {
+                const response = await promiseFive;
+                console.log(response);
+            } catch (error) {
+                console.log(`E : ${error}`);                
+            }
+        }
+        consumePromiseFive()
+
+
+    </script>
+</body>
+
+</html>
