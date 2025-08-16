@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid vs Masonry (3:4)</title>
+  <style>
+    html{
+        margin: 100px;
+    }
+    body {
+      background-color: white;
+      margin: 0;
+      padding: 20px;
+      width: 600px;
+      height: 800px;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+
+
+    .grid-container.standard {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 5px;
+      justify-content: center;
+      background-color: white;
+    }
+
+    .grid-container.masonry {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-auto-rows: 20px;
+      gap: 10px;
+      justify-content: center;
+      background-color: white;
+    }
+
+    .grid-item {
+      background-color: #8b90ff;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+
+    .grid-item:nth-child(1) { background-color: #8b90ff; }  /* Soft Indigo */
+.grid-item:nth-child(2) { background-color: #ffa07a; }  /* Light Salmon */
+.grid-item:nth-child(3) { background-color: #98fb98; }  /* Pale Green */
+.grid-item:nth-child(4) { background-color: #fcd34d; }  /* Soft Yellow */
+.grid-item:nth-child(5) { background-color: #ffb6c1; }  /* Light Pink */
+.grid-item:nth-child(6) { background-color: #87cefa; }  /* Light Sky Blue */
+.grid-item:nth-child(7) { background-color: #dda0dd; }  /* Plum */
+.grid-item:nth-child(8) { background-color: #a0f0ed; }  /* Aqua Mist */
+.grid-item:nth-child(9) { background-color: #c3f584; }  /* Lime Pastel */
+
+
+    /* Masonry spans for varied height */
+    .masonry .grid-item:nth-child(1) { grid-row: span 5; }
+    .masonry .grid-item:nth-child(2) { grid-row: span 7; }
+    .masonry .grid-item:nth-child(3) { grid-row: span 4; }
+    .masonry .grid-item:nth-child(4) { grid-row: span 6; }
+    .masonry .grid-item:nth-child(5) { grid-row: span 3; }
+    .masonry .grid-item:nth-child(6) { grid-row: span 5; }
+    .masonry .grid-item:nth-child(7) { grid-row: span 4; }
+    .masonry .grid-item:nth-child(8) { grid-row: span 6; }
+    .masonry .grid-item:nth-child(9) { grid-row: span 5; }
+
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h2>Standard Grid Layout</h2>
+    <div class="grid-container standard">
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Masonry Grid Layout</h2>
+    <div class="grid-container masonry">
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+    </div>
+  </div>
+
+</body>
+</html>

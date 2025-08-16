@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            gap: 50px;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            margin: 200px;
+        }
+
+        .dragging {
+            opacity: 0.5;
+        }
+
+        .dropzone {
+            border: 2px dashed #ccc;
+            transition: background-color 0.2s;
+            padding: 50px;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .dropzone.dragover {
+            background-color: #e8f5e8;
+            border:2px dashed #4CAF50;
+        }
+
+        #draggable {
+            padding: 20px;
+            background: #f0f0f0;
+            cursor: move;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="draggable" class="draggable" draggable="true">Drag me!</div>
+        <div id="dropzone" class="dropzone">Drop here</div>
+    </div>
+</body>
+<script>
+
+    const container =document.querySelector(".container");
+    const draggable =document.querySelector("#draggable");
+    const dropZone =document.querySelector("#dropzone");    
+
+
+    draggable.addEventListener("dragstart",dragstart);
+    dropZone.addEventListener("dragover",dragover);
+    dropZone.addEventListener("drop",handleDrop);
+    draggable.addEventListener("dragend",dragEnd);
+
+    function dragstart(e){
+        draggable.classList.add("dragging");
+    }
+    function dragover(e){
+        e.preventDefault();
+        dropZone.classList.add("dragover");
+    }
+    
+
+
+</script>
+
+</html>

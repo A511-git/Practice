@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: aliceblue;
+            text-transform: capitalize;
+            height: 100dvh;
+            font-size: 3vw;
+        }
+    </style>
+</head>
+
+<body>
+    <H2>go to console</H2>
+</body>
+<script>
+
+    let str="Hello Mr.DJ, Mera Gana PJ ";
+    Object.prototype.trueLength = function(){
+        return this.replace(/\s+/g, "").length;
+    }
+    console.log(str.trueLength());
+    console.log(str.length);
+</script>
+
+</html>
